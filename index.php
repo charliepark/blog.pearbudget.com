@@ -24,7 +24,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?<?php echo time(); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -281,19 +281,6 @@
 				<?php endif; // end primary widget area ?>
 					</ul>
 				</div><!-- #primary .widget-area -->
-
-		<?php
-			// A second sidebar for widgets, just because.
-			if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
-				<div id="secondary" class="widget-area" role="complementary">
-					<ul class="xoxo">
-						<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-					</ul>
-				</div><!-- #secondary .widget-area -->
-
-		<?php endif; ?>
-
 	</div><!-- #main -->
 
 	<div id="footer" role="contentinfo">
