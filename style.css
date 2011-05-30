@@ -21,3 +21,134 @@ table{border-collapse:collapse;border-spacing:0}
 /* end of Eric Meyer's CSS Reset */
 
 body, input, select, textarea{font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:11px;line-height:18px}
+
+a {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+applet {}
+
+article {}
+
+aside {}
+
+blockquote {}
+
+big {}
+
+body {}
+body{margin:0 auto;width:960px}
+
+caption {}
+
+cite {}
+
+code {}
+
+dd {}
+
+del {}
+
+dfn {}
+
+div {}
+
+dl {}
+
+dt {}
+
+em {}
+
+fieldset {}
+
+font {}
+
+footer {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+header {}
+
+hgroup {}
+
+html {}
+html{background:#FBFDF4}
+
+
+iframe {}
+
+img {}
+
+input {}
+
+ins {}
+
+kbd {}
+
+label {}
+
+li {}
+
+nav {}
+
+object {}
+
+ol {}
+
+p {}
+
+pre {}
+
+q {}
+
+s {}
+
+samp {}
+
+section {}
+
+small {}
+
+span {}
+
+strike {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+table {}
+
+tbody {}
+
+td {}
+
+tfoot {}
+
+th {}
+
+thead {}
+
+tr {}
+
+tt {}
+
+ul {}
+
+var {}
