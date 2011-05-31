@@ -6,149 +6,89 @@ Author: Charlie Park
 Version: 1.0
 */
 
-/* from Eric Meyer: v2.0b1 | 201101 */
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{border:0;font:inherit;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section{display:block}
-body{line-height:1}
-ol, ul{list-style:none}
-blockquote, q{quotes:none}
-blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
-ins{text-decoration:none}
-del{text-decoration:line-through}
-table{border-collapse:collapse;border-spacing:0}
-/* end of Eric Meyer's CSS Reset */
-
-body, input, select, textarea{font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:11px;line-height:18px}
-
-a {}
-
-abbr {}
-
-acronym {}
-
-address {}
-
-applet {}
-
-article {}
-
-aside {}
-
-blockquote {}
-
-big {}
-
-body {}
-body{margin:0 auto;width:960px}
-
-caption {}
-
-cite {}
-
-code {}
-
-dd {}
-
-del {}
-
-dfn {}
-
-div {}
-
-dl {}
-
-dt {}
-
-em {}
-
-fieldset {}
-
-font {}
-
-footer {}
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-header {}
-
-hgroup {}
-
-html {}
-html{background:#FBFDF4}
-
-
-iframe {}
-
-img {}
-
-input {}
-
-ins {}
-
-kbd {}
-
-label {}
-
-li {}
-
-nav {}
-
-object {}
-
-ol {}
-
-p {}
-
-pre {}
-
-q {}
-
-s {}
-
-samp {}
-
-section {}
-
-small {}
-
-span {}
-
-strike {}
-
-strong {}
-
-sub {}
-
-sup {}
-
-table {}
-
-tbody {}
-
-td {}
-
-tfoot {}
-
-th {}
-
-thead {}
-
-tr {}
-
-tt {}
-
-ul {}
-
-var {}
+	/* from Eric Meyer: v2.0b1 | 201101 */
+	a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{border:0;font:inherit;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section{display:block}
+	body{line-height:1}
+	ol, ul{list-style:none}
+	blockquote, q{quotes:none}
+	blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+	ins{text-decoration:none}
+	del{text-decoration:line-through}
+	table{border-collapse:collapse;border-spacing:0}
+	/* end of Eric Meyer's CSS Reset */
+
+	/* TypeKit FOUT-fixing */
+	.REMOVEME_html{visibility:hidden}
+	.wf-active, .wf-inactive{visibility:visible}
+	/* grid framework from https://github.com/charliepark/frmwrk */
+	.cf:after{clear:both;content:'';display:block}
+	.f{}
+	.g{}
+	.gc1{width:160px}	.gc2{width:360px}	.gc3{width:560px}	.gc4{width:760px}	.gc5{width:960px}	.gcb{clear:both}
+	.gcl{clear:left}	.gcr{clear:right}	.gfl{float:left;margin:0 0 40px 40px;}	.gfm{float:none;}	.gfr{float:right;margin:0 40px 40px 0}
+	.gml0{margin-left:0}	.gmb0{margin-bottom:0}	.gmr0{margin-right:0}
+	.gw{position:relative;left:50%;margin-left:-520px;width:1040px;}
+	.ls0{letter-spacing:0}
+
+
+	body, input, select, textarea{color:#4b4b4b;font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:14px;line-height:20px}
+
+	a{color:hsl(200, 60%, 50%);text-decoration:none;}
+	div#sidebar a{color:#3B95C3}
+	ul#nav_header a{border:0;border-top:4px solid #888;color:#888;display:block;font-size:16px;font-weight:bold;letter-spacing:-.5px;line-height:32px;padding:0 2px;}	
+	ul#nav_header a:hover{border-color:hsl(75, 50%, 50%);}
+	div.meta a{}
+	.page_title a{color:inherit}
+	.page_title a:hover{color:inherit}
+	.post_title a{color:#444}
+	.post_title a:hover{color:#000}
+
+	blockquote{background:#f6f6f6;border-top:4px solid #ccc;margin:-4px 20px 24px;padding:20px 20px 16px;}
+	body{background:#fff;box-shadow:0 0 5px #000;font-size:14px;line-height:20px;min-height:100%;margin:0 auto 40px;text-align:left;width:1040px;box-shadow:NON E;}
+	code{background:#fff;font-size:12px;font-family:monaco,monospace;line-height:18px;padding:2px 4px;position:relative;top:-1px}
+	div#content{border-top:4px solid #494949;position:relative;top:-3px;padding-bottom:33px;}
+	div#grid{background:url('line.png') 0 13px;bottom:0;height:10000px;left:0;opacity:.3;position:absolute;right:0;top:0;z-index:-1;		DISPLAY:NONE	}
+	div#header{display:none}
+	div#nav_header_bar{background:rgba(0,0,0,0.0);height:30px;padding:12px 0 10px;position:absolute;top:0;left:0;right:0}
+	div#sidebar{background:#f6f6f6;border-top:4px solid #888;color:#666;padding:20px 20px 16px;position:relative;top:-3px;width:320px;}
+	div.entry-meta{border:1px solid #eee;border-width:1px 0;color:#aaa;font-size:11px;margin-bottom:20px;padding:5px 0 6px}
+	div.meta{color:#666;font-size:12px;line-height:20px;}
+	div.meta_wrapper{border:1px solid #ccc;border-width:1px 0;margin-top:16px;padding-top:6px;}
+	div.post{border-bottom:4px solid #494949;padding:0 0 28px;}
+	dd{}	dl{}	dt{}
+	em{font-style:italic}
+	form#search-form{height:20px;margin:0 auto 0 320px;position:absolute;top:91px;left:50%;}
+	h1, h2, h3, h4, h5, h6 {font-weight:bold;position:relative;}
+	.page_title{color:#fafafa;font-size:25px;height:60px;line-height:57px;top:0px;text-indent:20px;}
+	.post_title{font-size:30px;line-height:40px;padding:20px 0 20px 40px;text-indent:-40px;top:4px;}
+	h3{font-size:25px;line-height:40px;padding:0 0 20px;top:6px}
+	div#sidebar h3{font-size:20px;padding-bottom:0;top:8px;}
+	h4{font-size:16px}
+	h5{font-size:14px}
+	h6{font-size:12px;}
+	div.meta h5{padding-bottom:1px;}
+	html{background:#f6f6f6;height:100%;text-align:center;}
+	html:before{box-shadow:inset 0 0 200px rgba(0,0,0,0.5);content:'';background:hsl(75, 100%, 50%);display:block;position:fixed;top:0;bottom:0;left:0;right:0;z-index:-1;}
+	img{}
+	div.post img{box-shadow:0 0 10px rgba(0,0,0,0.1);display:block;margin: 0 0 20px;max-width:540px;padding:10px;position:relative;top:5px;}
+	div.post img.floatleft{clear:both;float:left;left:0px;margin:20px 0 20px 20px;top:-5px;}
+	div.post img.floatright{clear:both;float:right;left:0px;margin:20px 20px 20px 0;top:-5px;}
+	/* Note: If you want an inline image in posts, be sure the height works with the grid: a multiple of 20px */
+	form#search-form input{background:#666;border:0;box-shadow:inset 0 1px 1px rgba(0,0,0,0.7);color:#ccc;font-size:12px;height:20px;line-height:10px;padding:0 4px;-moz-border-radius: 2px;border-radius: 2px;width:132px;}
+	li{ line-height:20px;margin:0;}
+	li{margin:0 0 0 20px;padding:0;}
+	div.meta li{border-left:1px solid #ccc;display:inline;list-style:none;margin:0;padding:0 10px;position:relative;}
+	div.meta li:first-child{border:0;padding-left:0}
+	div.post li:last-child{padding-bottom:20px;}
+	div.post li li:last-child{padding: 0;}
+	div.post ol li{list-style:decimal}
+	div.post ul li{list-style:disc;}
+	p{padding-bottom:20px}
+	div#sidebar p{font-size:13px;position:relative;top:1px}
+	div.meta p{padding:0 0 4px}
+	.page_title span{color:#aaa;font-size:18px;font-weight:200;left:2px;letter-spacing:.5px;position:relative;}
+	ul{margin:0;position:relative;line-height:20px}
+	strong{font-weight:bold;line-height:19px}
