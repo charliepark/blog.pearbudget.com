@@ -21,12 +21,12 @@
 					<?php $post_heading_tag = ( is_single() ) ? 'h1' : 'h2'; ?>
 					<<?php echo $post_heading_tag; ?> class="post_title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></<?php echo $post_heading_tag; ?>>
 
-					<?php if ( ! is_single() ) : ?>
+					<?php if ( ! is_single() and ! in_category(3) ) : ?>
 						<div class="entry-meta">
 							<?php
 							printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'twentyten' ),
 								'meta-prep meta-prep-author',
-								sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
+								sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>,',
 									get_permalink(),
 									esc_attr( get_the_time() ),
 									get_the_date()
@@ -38,6 +38,10 @@
 								)
 							);
 							?>
+								<?php if ( count( get_the_category() ) ) : ?>
+										<?php printf( __( '<span style="text-transform:lowercase">in %1$s</span>' ), get_the_category_list( ', ' ) ); ?>
+								<?php endif; ?>
+							
 						</div><!-- .entry-meta -->
 				<?php endif; ?>
 
@@ -52,28 +56,12 @@
 						</div><!-- .entry-content -->
 				<?php endif; ?>
 
-						<div class="entry-utility">
-							<?php if ( count( get_the_category() ) ) : ?>
-								<span class="cat-links">
-									<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-								</span>
-								<span class="meta-sep">|</span>
-							<?php endif; ?>
-							<?php
-								$tags_list = get_the_tag_list( '', ', ' );
-								if ( $tags_list ):
-							?>
-								<span class="tag-links">
-									<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-								</span>
-								<span class="meta-sep">|</span>
-							<?php endif; ?>
+				<?php if ( ! is_single() and ! in_category(3) ) : ?>
 							<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
-							<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-						</div><!-- .entry-utility -->
+				<?php endif; ?>		
 					</div><!-- #post-## -->
-
+				<?php if ( ! in_category(3) ) : ?>
 					<?php comments_template( '', true ); ?>
-
+				<?php endif; ?>
 			<?php endwhile; // End the loop. Whew. ?>
 <?php get_footer(); ?>

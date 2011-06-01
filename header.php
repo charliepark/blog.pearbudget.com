@@ -51,7 +51,7 @@
 			<?php /* If there are no posts to display, such as an empty archive page */ ?>
 			<?php if ( ! have_posts() ) : ?>
 				<div id="post-0" class="post cf error404 not-found">
-					<h1>Not Found</h1>
+					<h1 class="post_title">Not Found</h1>
 						<p>Sadly, we couldn&rsquo;t find any results for that request. You might try searching again.</p>
 						<?php get_search_form(); ?>
 				</div><!-- #post-0 -->
