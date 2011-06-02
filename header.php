@@ -44,7 +44,7 @@
 
 <body <?php body_class('cf'); ?>>
 	<?php $page_heading_tag = ( is_single() ) ? 'h2' : 'h1'; ?>
-	<<?php echo $page_heading_tag; ?> class="g gfl gc5 page_title"  style="background:#191919;margin-top:72px;margin-bottom:43px;"><a href="/">PearBudget <span>is a really simple budgeting tool. This is the PearBudget blog.</span></a></<?php echo $page_heading_tag; ?>>
+	<<?php echo $page_heading_tag; ?> class="g gfl gc5 page_title"  style="background:#191919;margin-top:32px;margin-bottom:43px;"><a href="/">PearBudget <span>is a really simple budgeting tool. This is the PearBudget blog.</span></a></<?php echo $page_heading_tag; ?>>
 	<form action="http://blog.pearbudget.com/" id="search-form" method="get" role="search"><input type="text" id="s" name="s" placeholder="Search"></form>
 			<div id="content" class="g gfl gc3 cf">
 
